@@ -417,6 +417,12 @@ Links:
   * caching (how does browser do this?)
   * browser internals
   * triggering of GPU for UI rendering (pros/cons)
+* animation
+  * requestAnimationFrame
+  * CSS3 animations
+  * CSS3 transitions
+  * CSS vs JavaScript animation
+  * animation library (velocity.js)
 
 Links:
 1. JavaScript Course in Russian, https://learn.javascript.ru (Document, Events, Interfaces)
@@ -458,6 +464,11 @@ Links:
 37. Ускоряем загрузку ресурсов для сайта, https://ymatuhin.ru/front-end/html5-link-prefetch
 38. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
 39. MDN (description of API)
+40. Animation, http://javascript.info/tutorial/animation
+41. CSS vs JavaScript animations, https://developers.google.com/web/fundamentals/design-and-ui/animations/css-vs-javascript
+42. Myth Busting: CSS Animations and Transitions with JavaScript, https://css-tricks.com/myth-busting-css-animations-vs-javascript
+43. Controlling CSS Animations and Transitions with JavaScript, https://css-tricks.com/controlling-css-animations-transitions-javascript
+44. Into to JavaScript Animation, https://davidwalsh.name/intro-javascript-animation
 
 
 # Workflow
@@ -497,28 +508,72 @@ Links:
   * compound tasks (aliasing)
   * watching
   * integration of 3rd party gulp plugins
+* REST API
+  * HTTP methods: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS [23]
+  * Specifics of each method request: body/no body [23]
+  * status (purpose of each status group: 2xx, 3xx, 4xx, 5xx) [24]
+  * headers: Content-Type, Accept, Accept-Language, Accept-Ranges, Range [37]
+  * custom headers: (X-...), header conventions [37]
+  * CRUD [38]
+  * basic understanding of REST
+  * parent <-> child relations
+  * classic REST and its deviations
+* security
+  * HTTPS
+  * SSL/TLS
+  * cookies (Path, Domain, Expires, Max-Age)
+  * xhr and SOP (protocol, host, port)
+  * HTML escaping
+  * CORS headers (Allow-*, Request-*) [30]
+  * cookies (Secure, HttpOnly) [31]
+  * cross domain cookies (xhr.withCredentials) [30]
+  * CORS enabled images [32]
+  * concern of session [33]
+  * browser mechanics to send cross-domain xhr (request with OPTIONS method) [30]
+  * authentication techniques:
+  * Form based authentication [34]
+  * Basic authentication [35]
 
 
 Links:
 1. JS Debugging, http://www.w3schools.com/js/js_debugging.asp
-1. Editing Styles and the DOM, https://developer.chrome.com/devtools/docs/dom-and-styles
-1. Inspect and Edit Page and Styles, https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles
-1. Developer tools gif tips, https://umaar.com/dev-tips/
-1. Debugging JavaScript, https://developer.chrome.com/devtools/docs/javascript-debugging
-1. Dev Tools: Debug, https://developers.google.com/web/tools/chrome-devtools/debug
-1. Dev Tools: Resources, https://developers.google.com/web/tools/chrome-devtools/iterate/manage-data/?hl=en
-1. Command Line API Reference, https://developer.chrome.com/devtools/docs/commandline-api
-1. How to use Chrome Dev Tools Like a Pro, https://medium.com/jotform-form-builder/how-to-use-chrome-devtools-like-a-pro-b9bd414870e3
-1. Talk: Tooling the Webapp Development Stack, http://www.paulirish.com/2012/talk-tooling-the-webapp-development-stack
-1. Dev Tools Shortcuts, https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts
-1. Dev Tools: Device Mode, https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode
-1. Dev Tools: Profile, https://developers.google.com/web/tools/chrome-devtools/profile (without Fix Memory Problems theme)
-1. Dev Tools: Security, https://developers.google.com/web/tools/chrome-devtools/security
-2. Node.js, https://nodejs.org/dist/latest-v8.x/docs/api/
-2. Node.js Tutorial, http://www.tutorialspoint.com/nodejs
-2. npm: package.json, https://docs.npmjs.com/files/package.json
-2. npm: getting started, https://docs.npmjs.com/getting-started/what-is-npm
-2. Debugging node.js application, https://github.com/node-inspector/node-inspector
-3. Gulp: Getting Started, https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
-3. Gulp: API, https://github.com/gulpjs/gulp/blob/master/docs/API.md
-4. Gulp: CLI, https://github.com/gulpjs/gulp-cli
+2. Editing Styles and the DOM, https://developer.chrome.com/devtools/docs/dom-and-styles
+3. Inspect and Edit Page and Styles, https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles
+4. Developer tools gif tips, https://umaar.com/dev-tips/
+5. Debugging JavaScript, https://developer.chrome.com/devtools/docs/javascript-debugging
+6. Dev Tools: Debug, https://developers.google.com/web/tools/chrome-devtools/debug
+7. Dev Tools: Resources, https://developers.google.com/web/tools/chrome-devtools/iterate/manage-data/?hl=en
+8. Command Line API Reference, https://developer.chrome.com/devtools/docs/commandline-api
+9. How to use Chrome Dev Tools Like a Pro, https://medium.com/jotform-form-builder/how-to-use-chrome-devtools-like-a-pro-b9bd414870e3
+10. Talk: Tooling the Webapp Development Stack, http://www.paulirish.com/2012/talk-tooling-the-webapp-development-stack
+11. Dev Tools Shortcuts, https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts
+12. Dev Tools: Device Mode, https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode
+13. Dev Tools: Profile, https://developers.google.com/web/tools/chrome-devtools/profile (without Fix Memory Problems theme)
+14. Dev Tools: Security, https://developers.google.com/web/tools/chrome-devtools/security
+15. Node.js, https://nodejs.org/dist/latest-v8.x/docs/api/
+16. Node.js Tutorial, http://www.tutorialspoint.com/nodejs
+17. npm: package.json, https://docs.npmjs.com/files/package.json
+18. npm: getting started, https://docs.npmjs.com/getting-started/what-is-npm
+19. Debugging node.js application, https://github.com/node-inspector/node-inspector
+20. Gulp: Getting Started, https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+21. Gulp: API, https://github.com/gulpjs/gulp/blob/master/docs/API.md
+22. Gulp: CLI, https://github.com/gulpjs/gulp-cli
+23. HTTP, https://developer.mozilla.org/en-US/docs/Web/HTTP
+24. List of HTTP status codes, https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+25. HTTPS, https://en.wikipedia.org/wiki/HTTPS
+26. Transport Layer Security (TLS), https://en.wikipedia.org/wiki/Transport_Layer_Security
+27. Sweet Cookie, https://en.wikipedia.org/wiki/Cookie
+28. HTTP Cookie, https://en.wikipedia.org/wiki/HTTP_cookie
+29. Same Origin Policy, https://en.wikipedia.org/wiki/Same-origin_policy
+30. HTTP Access Control (CORS), https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+31. HTTP Cookie, https://en.wikipedia.org/wiki/HTTP_cookie
+32. CORS enabled Image, https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
+33. Session (computer science), https://en.wikipedia.org/wiki/Session_(computer_science)
+34. Basic Access Authentication, https://en.wikipedia.org/wiki/Basic_access_authentication
+35. Form-Based Authentication, https://en.wikipedia.org/wiki/Form-based_authentication
+36. (optional) Michal Zalewski, The Tangled Web (Part 1 only)
+37. HTTP headers, https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+38. CRUD, https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+39. REST, https://en.wikipedia.org/wiki/Representational_state_transfer
+40. Learn REST: A Tutorial, http://rest.elkstein.org/2008/02/more-complex-rest-requests.html
+41. Richardson Maturity Model, http://martinfowler.com/articles/richardsonMaturityModel.html
