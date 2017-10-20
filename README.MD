@@ -304,3 +304,186 @@ Links:
 2. Douglas Crockford, JavaScript: The Good Parts
 3. MDN, https://developer.mozilla.org (for description of API)
 4. JavaScript Patterns Collection, http://shichuan.github.io/javascript-patterns (for patterns description
+
+## Step 3
+
+* OOP class system
+* difference between prototypical inheritance and OOP approach
+* inheritance vs delegation
+* functional approaches (immutability, pure functions, function composition)
+* patterns [3, 4 (optional)]
+* code reuse patterns
+* design patterns
+* performance
+* engine performance issues [2]
+* performance of functional approach
+* managing hell [5]
+
+Links:
+1. Michael Fogus, Functional JavaScript, parts 1 - 8
+2. Addy Osmani, Writing fast Memory Efficient JavaScript, https://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript
+3. JavaScript Patterns Collection, http://shichuan.github.io/javascript-patterns
+4. (optional) Addy Osmani, Learning JavaScript Design Patterns, https://addyosmani.com/resources/essentialjsdesignpatterns/book/index.html
+5. Marc Harter, Managing Node.js Hell with Promises, Generators and Other Approaches, https://strongloop.com/strongblog/node-js-callback-hell-promises-generators
+6. (optional) Nicholas C. Zakas, High Performance JavaScript
+
+## Step 4
+
+* understanding when it is convenient to use prototypical inheritance
+* alternatives for OOP and prototypical inheritance approaches
+* advantages / disadvantages of OOP approach
+* advantages / disadvantages of functional approach
+* plain module
+* understanding of following concerns
+  * UMD
+  * AMD
+    * definition and usage of module
+    * configuration of loader
+    * plugins
+    * web-based
+  * common.js
+    * definition and usage of module
+    * build tool
+
+
+Links:
+1. Michal Fogus, Functional JavaScript, part 9 - till the end
+2. Functional Programming in JavaScript, http://owenyang0.github.io/2015/04/12/functional-programming-in-javascript/
+3. Mastering the Module Pattern, https://toddmotto.com/mastering-the-module-pattern
+4. Writing Modular JavaScript, https://addyosmani.com/writing-modular-js
+
+# Browser
+* window object, document, navigator, location [1]
+* DOM manipulation methods [2, 6, 7]
+* querySelector / querySelectorAll [2, 6, 7]
+* add / remove event listener [3, 6, 7]
+* event structure (source, target) [6, 7]
+* event bubbling and capturing [3]
+* event types (mouse, keyboard, input, whell, scroll, touch) [4]
+* creation of event (createEvent, initEvent) [6, 7]
+* XmlHttpRequest [5]
+* console API [6]
+* getComputedStyle() [6]
+* feature detection vs sniffing [9, 10]
+* document fragment [12]
+* File / FileList / FileReader [4]
+* xhr2 / fetch API [5]
+* FormData [5]
+* WebStorage API [6, 7]
+* cookie API
+* history API [8, 9]
+* hash (hash change event, influence on routing, change of hash) [10]
+* technique of routing based on hash / history API [10]
+* requestAnimationFrame [11]
+* setTimeout, setInterval [12]
+* Data URL (create, free) [13, 14]
+* promises (browser-specific) [15]
+* script loading options (sync, async, defer) [16]
+* purpose of polyfill [17]
+* nature [18]
+  * main loop
+  * non blocking actions
+  * unloading of main loop (setTimeout)
+* purpose of some headers [19]
+  * Content-Type
+  * Origin
+  * Cookie
+  * Set-Cookie
+  * User-Agent
+  * Accept-Language
+  * Referer
+
+Links:
+1. JavaScript Course in Russian, https://learn.javascript.ru (Document, Events, Interfaces)
+2. MDN - Window, https://developer.mozilla.org/en-US/docs/Web/API/Window
+3. Eloquent JavaScript, http://eloquentjavascript.net/ (from "JavaScript and the Browser" to "Node.js")
+4. You might not need jQuery, http://youmightnotneedjquery.com
+5. Event Capturing and Bubbling in JavaScript, https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm
+6. MDN - event reference, https://developer.mozilla.org/en-US/docs/Web/Events
+7. XmlHttpRequest, http://www.w3schools.com/xml/dom_http.asp
+8. MDN (description of API)
+9. W3 Schools, http://www.w3schools.com
+10. Browser and Feature Detection, http://www.htmlgoodies.com/html5/client/browser-and-feature-detection-make-your-website-look-great-everywhere..html#fbid=PizJ6eQpj1n
+11. How to Detect Features instead of Browsers, http://www.htmlgoodies.com/html5/client/browser-and-feature-detection-make-your-website-look-great-everywhere..html#fbid=PizJ6eQpj1n
+12. DOM Document Fragments, http://ejohn.org/blog/dom-documentfragments
+13. Reading Files in JavaScript using File APIs, http://www.html5rocks.com/en/tutorials/file/dndfiles
+14. New Tricks in XmlHttpRequest2, http://www.html5rocks.com/en/tutorials/file/xhr2
+15. Using the WebStorage API, https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
+16. HTML5 Web Storage, http://www.sitepoint.com/html5-web-storage
+17. Using the HTML5 History API, https://css-tricks.com/using-the-html5-history-api
+18. Manipulating the Browser History, https://developer.mozilla.org/en-US/docs/Web/API/History_API
+19. Must Know URL Hash Techniques for AJAX applications, http://blog.mgm-tp.com/2011/10/must-know-url-hashtechniques-for-ajax-applications
+20. Using requestAnimationFrame, https://css-tricks.com/using-requestanimationframe
+21. Understanding timers: setTimeout  and setInterval, http://javascript.info/tutorial/settimeout-setinterval
+22. Data URIs, https://css-tricks.com/data-uris
+23. Using Object URLs, https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications#Example_Using_object_URLs_to_display_images
+24. JavaScript Promises, http://www.html5rocks.com/en/tutorials/es6/promises
+25. Async Attribute and Scripts at the bottom, https://css-tricks.com/async-attribute-scripts-bottom
+26. Polyfill, https://en.wikipedia.org/wiki/Polyfill
+27. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
+28. List of HTTP header fields, https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+29. MDN (description of API)
+
+
+# Workflow
+
+* Developer Tools
+* node.js
+  * node.js module system (common.js, import, export)
+  * node.js module resolvement
+  * node_modules
+  * versioning
+  * package.json
+    * name
+    * version
+    * dependencies
+    * devDependencies
+    * scripts
+    * private
+  * npm
+    * npm init
+    * npm install <arguments> (--save, --save-dev, -g, <module name>)
+    * npm uninstall
+    * npm link
+    * npm update
+    * npm outdated
+    * npm ls
+    * npm run
+    * npm test
+    * npm start
+* gulp build system
+  * gulp cli
+  * Gulpfile.js
+  * streaming description
+  * gulp.task
+  * async tasks
+  * gulp.src and gulp.dest
+  * pipe
+  * compound tasks (aliasing)
+  * watching
+  * integration of 3rd party gulp plugins
+
+
+Links:
+1. JS Debugging, http://www.w3schools.com/js/js_debugging.asp
+1. Editing Styles and the DOM, https://developer.chrome.com/devtools/docs/dom-and-styles
+1. Inspect and Edit Page and Styles, https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles
+1. Developer tools gif tips, https://umaar.com/dev-tips/
+1. Debugging JavaScript, https://developer.chrome.com/devtools/docs/javascript-debugging
+1. Dev Tools: Debug, https://developers.google.com/web/tools/chrome-devtools/debug
+1. Dev Tools: Resources, https://developers.google.com/web/tools/chrome-devtools/iterate/manage-data/?hl=en
+1. Command Line API Reference, https://developer.chrome.com/devtools/docs/commandline-api
+1. How to use Chrome Dev Tools Like a Pro, https://medium.com/jotform-form-builder/how-to-use-chrome-devtools-like-a-pro-b9bd414870e3
+1. Talk: Tooling the Webapp Development Stack, http://www.paulirish.com/2012/talk-tooling-the-webapp-development-stack
+1. Dev Tools Shortcuts, https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts
+1. Dev Tools: Device Mode, https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode
+1. Dev Tools: Profile, https://developers.google.com/web/tools/chrome-devtools/profile (without Fix Memory Problems theme)
+1. Dev Tools: Security, https://developers.google.com/web/tools/chrome-devtools/security
+2. Node.js, https://nodejs.org/dist/latest-v8.x/docs/api/
+2. Node.js Tutorial, http://www.tutorialspoint.com/nodejs
+2. npm: package.json, https://docs.npmjs.com/files/package.json
+2. npm: getting started, https://docs.npmjs.com/getting-started/what-is-npm
+2. Debugging node.js application, https://github.com/node-inspector/node-inspector
+3. Gulp: Getting Started, https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+3. Gulp: API, https://github.com/gulpjs/gulp/blob/master/docs/API.md
+4. Gulp: CLI, https://github.com/gulpjs/gulp-cli
