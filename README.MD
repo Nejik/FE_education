@@ -364,27 +364,28 @@ Links:
 * XmlHttpRequest [5]
 * console API [6]
 * getComputedStyle() [6]
-* feature detection vs sniffing [9, 10]
+
+* feature detection vs sniffing [10, 11]
 * document fragment [12]
-* File / FileList / FileReader [4]
-* xhr2 / fetch API [5]
-* FormData [5]
-* WebStorage API [6, 7]
+* File / FileList / FileReader [13]
+* xhr2 / fetch API [14]
+* FormData [14]
+* WebStorage API [15, 16]
 * cookie API
-* history API [8, 9]
-* hash (hash change event, influence on routing, change of hash) [10]
-* technique of routing based on hash / history API [10]
-* requestAnimationFrame [11]
-* setTimeout, setInterval [12]
-* Data URL (create, free) [13, 14]
-* promises (browser-specific) [15]
-* script loading options (sync, async, defer) [16]
-* purpose of polyfill [17]
-* nature [18]
+* history API [17, 18]
+* hash (hash change event, influence on routing, change of hash) [19]
+* technique of routing based on hash / history API [19]
+* requestAnimationFrame [20]
+* setTimeout, setInterval [21]
+* Data URL (create, free) [22, 23]
+* promises (browser-specific) [24]
+* script loading options (sync, async, defer) [25]
+* purpose of polyfill [26]
+* nature [27]
   * main loop
   * non blocking actions
   * unloading of main loop (setTimeout)
-* purpose of some headers [19]
+* purpose of some headers [28]
   * Content-Type
   * Origin
   * Cookie
@@ -392,6 +393,30 @@ Links:
   * User-Agent
   * Accept-Language
   * Referer
+* Worker API [30]
+  * unloading of main loop (background jobs, transferrable)
+* cross-browser issues (caniuse.com, MDN)
+* performance problems 31
+  * DOM manipulation
+  * XHR calls
+  * many JS/CSS files
+  * responsiveness of actions (slow action handling)
+* purpose of some headers [32]
+  * ETag
+  * Last-Modified
+  * Cache
+  * Cache-Control
+  * Expires
+* technique of inlining images [33]
+* PageSpeed [34]
+* optimizing of critical path [35, 36]
+* nature [37]
+  * browser render cycle
+  * reflow
+  * when browser loads a page (in advance)
+  * caching (how does browser do this?)
+  * browser internals
+  * triggering of GPU for UI rendering (pros/cons)
 
 Links:
 1. JavaScript Course in Russian, https://learn.javascript.ru (Document, Events, Interfaces)
@@ -423,6 +448,16 @@ Links:
 27. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
 28. List of HTTP header fields, https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
 29. MDN (description of API)
+30. The Basics of Web Workers, http://www.html5rocks.com/en/tutorials/workers/basics/
+31. Top 10 Client-Side Performance Problems in Web 2.0, http://apmblog.dynatrace.com/2010/08/25/top-10-client-side-performance-problems-in-web-2-0/
+32. List of HTTP header fields, https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+33. Inline Images with Data URLs, http://www.websiteoptimization.com/speed/tweak/inline-images/
+34. Make the Web Faster, https://developers.google.com/speed/
+35. Optimize the Critical Rendering Path, http://www.sitepoint.com/optimizing-critical-rendering-path/
+36. Critical Rendering Path, https://developers.google.com/web/fundamentals/performance/critical-rendering-path/
+37. Ускоряем загрузку ресурсов для сайта, https://ymatuhin.ru/front-end/html5-link-prefetch
+38. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
+39. MDN (description of API)
 
 
 # Workflow
