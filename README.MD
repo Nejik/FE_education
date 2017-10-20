@@ -353,6 +353,8 @@ Links:
 4. Writing Modular JavaScript, https://addyosmani.com/writing-modular-js
 
 # Browser
+
+## Step 1
 * window object, document, navigator, location [1]
 * DOM manipulation methods [2, 6, 7]
 * querySelector / querySelectorAll [2, 6, 7]
@@ -364,28 +366,42 @@ Links:
 * XmlHttpRequest [5]
 * console API [6]
 * getComputedStyle() [6]
+* DOMContentLoaded event [6]
 
-* feature detection vs sniffing [10, 11]
-* document fragment [12]
-* File / FileList / FileReader [13]
-* xhr2 / fetch API [14]
-* FormData [14]
-* WebStorage API [15, 16]
+Links:
+1. JavaScript Course in Russian, https://learn.javascript.ru (Document, Events, Interfaces)
+1. JavaScript videos from learn.javascript.ru in Russian (https://drive.google.com/open?id=0B8syveH8ZtfsQVNEYUVJZVBtVm8)
+1. MDN - Window, https://developer.mozilla.org/en-US/docs/Web/API/Window
+1. Eloquent JavaScript, http://eloquentjavascript.net/ (from "JavaScript and the Browser" to "Node.js")
+1. You might not need jQuery, http://youmightnotneedjquery.com
+1. Event Capturing and Bubbling in JavaScript, https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm
+1. MDN - event reference, https://developer.mozilla.org/en-US/docs/Web/Events
+1. XmlHttpRequest, http://www.w3schools.com/xml/dom_http.asp
+1. MDN (description of API)
+1. W3 Schools, http://www.w3schools.com
+
+## Step 2
+* feature detection vs sniffing [1, 2]
+* document fragment [3]
+* File / FileList / FileReader [4]
+* xhr2 / fetch API [5]
+* FormData [5]
+* WebStorage API [6, 7]
 * cookie API
-* history API [17, 18]
-* hash (hash change event, influence on routing, change of hash) [19]
-* technique of routing based on hash / history API [19]
-* requestAnimationFrame [20]
-* setTimeout, setInterval [21]
-* Data URL (create, free) [22, 23]
-* promises (browser-specific) [24]
-* script loading options (sync, async, defer) [25]
-* purpose of polyfill [26]
-* nature [27]
+* history API [8, 9]
+* hash (hash change event, influence on routing, change of hash) [10]
+* technique of routing based on hash / history API [10]
+* requestAnimationFrame [11]
+* setTimeout, setInterval [12]
+* Data URL (create, free) [13, 14]
+* promises (browser-specific) [15]
+* script loading options (sync, async, defer) [16]
+* purpose of polyfill [17]
+* nature [18]
   * main loop
   * non blocking actions
   * unloading of main loop (setTimeout)
-* purpose of some headers [28]
+* purpose of some headers [19]
   * Content-Type
   * Origin
   * Cookie
@@ -393,82 +409,68 @@ Links:
   * User-Agent
   * Accept-Language
   * Referer
-* Worker API [30]
+
+Links: 
+1. Browser and Feature Detection, http://www.htmlgoodies.com/html5/client/browser-and-feature-detection-make-your-website-look-great-everywhere..html#fbid=PizJ6eQpj1n
+1. How to Detect Features instead of Browsers, http://www.htmlgoodies.com/html5/client/browser-and-feature-detection-make-your-website-look-great-everywhere..html#fbid=PizJ6eQpj1n
+1. DOM Document Fragments, http://ejohn.org/blog/dom-documentfragments
+1. Reading Files in JavaScript using File APIs, http://www.html5rocks.com/en/tutorials/file/dndfiles
+1. New Tricks in XmlHttpRequest2, http://www.html5rocks.com/en/tutorials/file/xhr2
+1. Using the WebStorage API, https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
+1. HTML5 Web Storage, http://www.sitepoint.com/html5-web-storage
+1. Using the HTML5 History API, https://css-tricks.com/using-the-html5-history-api
+1. Manipulating the Browser History, https://developer.mozilla.org/en-US/docs/Web/API/History_API
+1. Must Know URL Hash Techniques for AJAX applications, http://blog.mgm-tp.com/2011/10/must-know-url-hashtechniques-for-ajax-applications
+1. Using requestAnimationFrame, https://css-tricks.com/using-requestanimationframe
+1. Understanding timers: setTimeout  and setInterval, http://javascript.info/tutorial/settimeout-setinterval
+1. Data URIs, https://css-tricks.com/data-uris
+1. Using Object URLs, https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications#Example_Using_object_URLs_to_display_images
+1. JavaScript Promises, http://www.html5rocks.com/en/tutorials/es6/promises
+1. Async Attribute and Scripts at the bottom, https://css-tricks.com/async-attribute-scripts-bottom
+1. Polyfill, https://en.wikipedia.org/wiki/Polyfill
+1. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
+1. List of HTTP header fields, https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+1. MDN (description of API)
+
+## Step 3
+
+* Worker API [1]
   * unloading of main loop (background jobs, transferrable)
 * cross-browser issues (caniuse.com, MDN)
-* performance problems 31
+* performance problems [2]
   * DOM manipulation
   * XHR calls
   * many JS/CSS files
   * responsiveness of actions (slow action handling)
-* purpose of some headers [32]
+* purpose of some headers [3]
   * ETag
   * Last-Modified
   * Cache
   * Cache-Control
-  * Expires
-* technique of inlining images [33]
-* PageSpeed [34]
-* optimizing of critical path [35, 36]
-* nature [37]
+* Expires
+* technique of inlining images [4]
+* PageSpeed [5]
+* optimizing of critical path [6, 7]
+* nature [8]
   * browser render cycle
   * reflow
   * when browser loads a page (in advance)
   * caching (how does browser do this?)
   * browser internals
   * triggering of GPU for UI rendering (pros/cons)
-* animation
-  * requestAnimationFrame
-  * CSS3 animations
-  * CSS3 transitions
-  * CSS vs JavaScript animation
-  * animation library (velocity.js)
 
 Links:
-1. JavaScript Course in Russian, https://learn.javascript.ru (Document, Events, Interfaces)
-2. MDN - Window, https://developer.mozilla.org/en-US/docs/Web/API/Window
-3. Eloquent JavaScript, http://eloquentjavascript.net/ (from "JavaScript and the Browser" to "Node.js")
-4. You might not need jQuery, http://youmightnotneedjquery.com
-5. Event Capturing and Bubbling in JavaScript, https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm
-6. MDN - event reference, https://developer.mozilla.org/en-US/docs/Web/Events
-7. XmlHttpRequest, http://www.w3schools.com/xml/dom_http.asp
-8. MDN (description of API)
-9. W3 Schools, http://www.w3schools.com
-10. Browser and Feature Detection, http://www.htmlgoodies.com/html5/client/browser-and-feature-detection-make-your-website-look-great-everywhere..html#fbid=PizJ6eQpj1n
-11. How to Detect Features instead of Browsers, http://www.htmlgoodies.com/html5/client/browser-and-feature-detection-make-your-website-look-great-everywhere..html#fbid=PizJ6eQpj1n
-12. DOM Document Fragments, http://ejohn.org/blog/dom-documentfragments
-13. Reading Files in JavaScript using File APIs, http://www.html5rocks.com/en/tutorials/file/dndfiles
-14. New Tricks in XmlHttpRequest2, http://www.html5rocks.com/en/tutorials/file/xhr2
-15. Using the WebStorage API, https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
-16. HTML5 Web Storage, http://www.sitepoint.com/html5-web-storage
-17. Using the HTML5 History API, https://css-tricks.com/using-the-html5-history-api
-18. Manipulating the Browser History, https://developer.mozilla.org/en-US/docs/Web/API/History_API
-19. Must Know URL Hash Techniques for AJAX applications, http://blog.mgm-tp.com/2011/10/must-know-url-hashtechniques-for-ajax-applications
-20. Using requestAnimationFrame, https://css-tricks.com/using-requestanimationframe
-21. Understanding timers: setTimeout  and setInterval, http://javascript.info/tutorial/settimeout-setinterval
-22. Data URIs, https://css-tricks.com/data-uris
-23. Using Object URLs, https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications#Example_Using_object_URLs_to_display_images
-24. JavaScript Promises, http://www.html5rocks.com/en/tutorials/es6/promises
-25. Async Attribute and Scripts at the bottom, https://css-tricks.com/async-attribute-scripts-bottom
-26. Polyfill, https://en.wikipedia.org/wiki/Polyfill
-27. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
-28. List of HTTP header fields, https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
-29. MDN (description of API)
-30. The Basics of Web Workers, http://www.html5rocks.com/en/tutorials/workers/basics/
-31. Top 10 Client-Side Performance Problems in Web 2.0, http://apmblog.dynatrace.com/2010/08/25/top-10-client-side-performance-problems-in-web-2-0/
-32. List of HTTP header fields, https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
-33. Inline Images with Data URLs, http://www.websiteoptimization.com/speed/tweak/inline-images/
-34. Make the Web Faster, https://developers.google.com/speed/
-35. Optimize the Critical Rendering Path, http://www.sitepoint.com/optimizing-critical-rendering-path/
-36. Critical Rendering Path, https://developers.google.com/web/fundamentals/performance/critical-rendering-path/
-37. Ускоряем загрузку ресурсов для сайта, https://ymatuhin.ru/front-end/html5-link-prefetch
-38. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
-39. MDN (description of API)
-40. Animation, http://javascript.info/tutorial/animation
-41. CSS vs JavaScript animations, https://developers.google.com/web/fundamentals/design-and-ui/animations/css-vs-javascript
-42. Myth Busting: CSS Animations and Transitions with JavaScript, https://css-tricks.com/myth-busting-css-animations-vs-javascript
-43. Controlling CSS Animations and Transitions with JavaScript, https://css-tricks.com/controlling-css-animations-transitions-javascript
-44. Into to JavaScript Animation, https://davidwalsh.name/intro-javascript-animation
+1. The Basics of Web Workers, http://www.html5rocks.com/en/tutorials/workers/basics/
+1. Top 10 Client-Side Performance Problems in Web 2.0, http://apmblog.dynatrace.com/2010/08/25/top-10-client-side-performance-problems-in-web-2-0/
+1. List of HTTP header fields, https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+1. Inline Images with Data URLs, http://www.websiteoptimization.com/speed/tweak/inline-images/
+1. Make the Web Faster, https://developers.google.com/speed/
+1. Optimize the Critical Rendering Path, http://www.sitepoint.com/optimizing-critical-rendering-path/
+1. Critical Rendering Path, https://developers.google.com/web/fundamentals/performance/critical-rendering-path/
+1. Ускоряем загрузку ресурсов для сайта, https://ymatuhin.ru/front-end/html5-link-prefetch
+1. How Browsers Work, http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
+1. MDN (description of API)
+
 
 
 # Workflow
